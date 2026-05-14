@@ -2,11 +2,9 @@ node_modules/
 dist/
 release/
 .netlify/
-
 .env
 .env.local
 .env.*.local
-
 *.log
 .DS_Store
 Thumbs.db
