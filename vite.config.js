@@ -1,8 +1,10 @@
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
-import tailwindcss from "@tailwindcss/vite";
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
 export default defineConfig({
-  base: "/quizreviewer/",
-  plugins: [react(), tailwindcss()],
+  base: '/quizreviewer/',
+  plugins: [react()],
+  build: {
+    chunkSizeWarningLimit: 1200,
+  },
 });
